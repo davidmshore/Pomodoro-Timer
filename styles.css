@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full height of the viewport */
+    margin: 0;
+}
+
+/* Timer Container */
+.container {
+    background: #ffffff;
+    padding: 80px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Timer Display */
+#timer {
+    font-size: 150px;
+    color: #3f51b5; /* indigo */
+    margin: 20px 0;
+    padding: 40px;
+    border: 8px solid #3f51b5; /* indigo */
+    border-radius: 15px; 
+    background-color: #e3f2fd; /* light blue */
+}
+
+/* Buttons */
+button {
+    padding: 20px 40px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer; /* on hover */
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #3700b3;
+}
+
+.blink {
+    animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }   /* begin animation visible */
+    50% { opacity: 0; }  /* at halfway point of animation turn invisible */
+    100% { opacity: 1; } /* end animation visible */
+}
+
+
+
